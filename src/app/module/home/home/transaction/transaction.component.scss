@@ -1,0 +1,18 @@
+::ng-deep .transaction-accordion {
+  .mat-expansion-panel-header {
+    padding: 0;
+
+    .mat-content {
+      margin: 0;
+      height: 100%;
+
+      .mat-expansion-panel-header-title {
+        margin: 0;
+
+        button {
+          height: 100% !important;
+        }
+      }
+    }
+  }
+}

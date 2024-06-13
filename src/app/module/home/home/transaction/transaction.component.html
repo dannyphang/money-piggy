@@ -1,0 +1,37 @@
+<div class="bg-yellow-300 min-h-full">
+  <div class="flex">
+    <mat-accordion class="transaction-accordion">
+      <mat-expansion-panel class="w-screen" hideToggle [expanded]="isExpanding">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="w-full" (click)="$event.stopPropagation()">
+            <button
+              mat-button
+              class="w-full p-0 h-full"
+              (click)="toggleCatButton('INCOME')"
+            >
+              INCOME
+            </button>
+            <button
+              mat-button
+              class="w-full p-0 h-full"
+              (click)="toggleCatButton('EXPENSE')"
+            >
+              EXPENSE
+            </button>
+            <button
+              mat-button
+              class="w-full p-0 h-full"
+              (click)="toggleCatButton('TOTAL')"
+            >
+              TOTAL
+            </button>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="expandContent">
+          <app-category [currentStep]="currentStep"></app-category>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>

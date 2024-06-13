@@ -1,0 +1,7 @@
+{
+  "serverBaseUrl": "https://haha-421102.as.r.appspot.com/",
+  "localBaseUrl": "http://localhost:1112",
+
+  "serverAuthUrl": "https://firebase-auth-five-phi.vercel.app/auth",
+  "localAuthUrl": "http://localhost:1113/auth"
+}

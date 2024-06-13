@@ -1,0 +1,23 @@
+<div class="calendar-div flex">
+  <button
+    mat-icon-button
+    class="p-0 justify-center items-center button-icon"
+    (click)="dateButtonClick(false)"
+  >
+    <mat-icon class="p-0 grid justify-center items-center"
+      >arrow_back_ios</mat-icon
+    >
+  </button>
+
+  <div class="month-label grid items-center">{{ date }}</div>
+
+  <button
+    mat-icon-button
+    class="p-0 justify-center items-center button-icon"
+    (click)="dateButtonClick(true)"
+  >
+    <mat-icon class="p-0 grid justify-center items-center"
+      >arrow_forward_ios</mat-icon
+    >
+  </button>
+</div>

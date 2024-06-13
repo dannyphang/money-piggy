@@ -1,0 +1,28 @@
+.cat-div {
+  display: grid !important;
+  grid-template: "a a" "b c";
+  grid-template-columns: 1fr 1fr;
+  min-width: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cat-name {
+  grid-area: a;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.expense-limit {
+  grid-area: b;
+  display: flex;
+  justify-content: center;
+}
+
+.expense-amount {
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+}
